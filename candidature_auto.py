@@ -1,4 +1,4 @@
-"""Candidature Auto : envoyer une candidature spontanée en quelques secondes.
+"""Candidature Auto : envoyer un premier message de prise de contact à un recruteur.
 
 On saisit le prénom, le nom et l'entreprise d'un recruteur. Le script déduit
 son adresse mail à partir du format utilisé par l'entreprise

@@ -1,21 +1,25 @@
 # Candidature Auto
 
-Petit outil Python qui envoie une candidature spontanée personnalisée en quelques secondes.
+Petit outil Python pour envoyer un premier message de prise de contact à un recruteur, en quelques secondes.
 
 ## Le problème
 
-Pendant ma recherche d'emploi, chaque candidature spontanée prenait plusieurs minutes : trouver l'adresse mail du recruteur, adapter le message, joindre le CV, vérifier qu'on ne s'est pas trompé de nom. Sur des dizaines d'entreprises, ce temps s'additionne vite.
+Pendant ma recherche d'emploi, je voulais me faire connaître d'un grand nombre d'entreprises, sans y passer des heures. Le frein n'était pas le message lui-même mais tout ce qu'il y a autour : retrouver l'adresse du bon interlocuteur, adapter les salutations, joindre le CV, vérifier qu'on ne s'est pas trompé de nom.
 
-## La solution
+## L'idée
 
-Une petite fenêtre où l'on saisit le prénom, le nom et l'entreprise du recruteur. Le script :
+Ce mail n'a pas vocation à décrocher un poste à lui seul. C'est une **première prise de contact** : un message court qui présente mon profil, avec le CV en pièce jointe. Si la personne est intéressée, l'échange continue, et la suite se fait au cas par cas, de façon personnalisée. L'outil automatise seulement l'étape la plus répétitive, pour garder du temps pour les conversations qui en valent la peine.
 
-1. **devine l'adresse mail** à partir du format utilisé par l'entreprise (`prenom.nom@entreprise.com`, `pnom@entreprise.com`…), stocké dans `entreprises.xlsx` (100 entreprises) ;
-2. **rédige le mail** à partir d'un modèle, avec la civilité, le nom et l'entreprise ;
+## Comment ça marche
+
+Une petite fenêtre où l'on saisit le prénom, le nom et l'entreprise de l'interlocuteur. Le script :
+
+1. **retrouve l'adresse mail** à partir du format utilisé par l'entreprise (`prenom.nom@entreprise.com`, `pnom@entreprise.com`…), stocké dans `entreprises.xlsx` (100 entreprises) ;
+2. **rédige le message** à partir d'un modèle, avec la civilité, le nom et l'entreprise ;
 3. **affiche un récapitulatif** (destinataire, objet, message) et attend une confirmation ;
 4. **envoie le mail** avec le CV en pièce jointe.
 
-Le nom des recruteurs est normalisé avant de construire l'adresse : `Éric Lefèvre` chez AXA devient `eric.lefevre@axa.com`.
+Le nom de l'interlocuteur est normalisé avant de construire l'adresse : `Éric Lefèvre` chez AXA devient `eric.lefevre@axa.com`.
 
 ## Utilisation
 
@@ -35,7 +39,8 @@ Aucun identifiant n'est écrit dans le code. L'adresse et le mot de passe sont l
 ## Limites
 
 - Le format d'adresse est une déduction : si l'entreprise utilise une exception pour certains salariés, le mail n'arrivera pas.
-- À utiliser avec modération : un mail ciblé et personnalisé, pas un envoi de masse.
+- Un message court reste une porte d'entrée : il ouvre la conversation, il ne la remplace pas.
+- Chaque envoi est confirmé à la main : l'outil n'envoie jamais en masse sans relecture.
 
 ## Tests
 
