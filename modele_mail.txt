@@ -1,9 +1,9 @@
-Objet : Candidature spontanée - Data / IA
+Objet : Data et IA chez {entreprise} : 15 minutes d'échange ?
 Bonjour {civilite} {nom},
 
-Diplômé de l'Université Paris Dauphine - PSL, je suis passionné par l'analyse et la valorisation des données. Grâce à ma formation et mes expériences, j'ai développé des compétences en modélisation, machine learning et automatisation, me permettant d'apporter des solutions adaptées aux enjeux métier.
+Je me permets de vous contacter directement. Diplômé de Paris Dauphine - PSL, je travaille à la croisée de la data, de la finance et de l'automatisation, et je m'intéresse de près à ce que fait {entreprise} dans ces domaines.
 
-Je serais ravi de contribuer à vos projets et d'échanger sur les opportunités au sein de {entreprise}. Je joins mon CV pour plus de détails et reste disponible pour un entretien.
+Je ne vous écris pas pour une offre précise, mais pour me présenter et, si mon profil vous parle, échanger un quart d'heure sur vos équipes et vos besoins. Mon CV est en pièce jointe pour vous faire une idée.
 
-Cordialement,
+Bonne journée,
 Ayman YAYA

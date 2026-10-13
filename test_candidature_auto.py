@@ -28,6 +28,6 @@ def test_entreprise_inconnue():
 
 def test_message():
     objet, corps = rediger_message("Madame", "dupont", "AXA")
-    assert objet == "Candidature spontanée - Data / IA"
+    assert objet == "Data et IA chez AXA : 15 minutes d'échange ?"
     assert corps.startswith("Bonjour Madame Dupont,")
-    assert "au sein de AXA" in corps
+    assert "ce que fait AXA" in corps

@@ -70,9 +70,9 @@ def generer_email(prenom, nom, entreprise, formats):
 def rediger_message(civilite, nom, entreprise):
     """Remplit le modèle de mail. La première ligne du modèle est l'objet."""
     lignes = FICHIER_MODELE.read_text(encoding="utf-8").splitlines()
-    objet = lignes[0].removeprefix("Objet :").strip()
-    corps = "\n".join(lignes[1:]).strip()
-    corps = corps.format(civilite=civilite, nom=nom.strip().title(), entreprise=entreprise.strip())
+    valeurs = dict(civilite=civilite, nom=nom.strip().title(), entreprise=entreprise.strip())
+    objet = lignes[0].removeprefix("Objet :").strip().format(**valeurs)
+    corps = "\n".join(lignes[1:]).strip().format(**valeurs)
     return objet, corps
 
 
